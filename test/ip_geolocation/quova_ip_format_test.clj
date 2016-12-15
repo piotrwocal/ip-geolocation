@@ -9,3 +9,9 @@
 		"1"						 16777216)
 	(is (thrown? NumberFormatException (octetIp->longIp ""))))
 
+(deftest longIp->octetIp-test
+  (are [longIp octetIp] (= (longIp->octetIp longIp) octetIp)
+    3401190660   "202.186.13.4"
+    37           "0.0.0.37"
+    16777216     "1.0.0.0"))
+
