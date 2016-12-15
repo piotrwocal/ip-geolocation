@@ -1,5 +1,6 @@
 (ns ip-geolocation.quova-ip-format-test
-	(:use [clojure.test :only [deftest is are]]))
+	(:use [clojure.test :only [deftest is are]])
+	(:require [ip-geolocation.quova-ip-format :refer :all]))
 
 (deftest octetIp->longIp-test
 	(are [octetIp longIp] (= (octetIp->longIp octetIp) longIp)

@@ -4,5 +4,5 @@
 
 (defn octetIp->longIp [octetIp]
 	(let [octet-parts (map #(Integer/valueOf %) (str/split octetIp #"\."))
-				octet-rations [16777216 65536 256 1]]
-		(apply + (map * octet-parts octet-rations))))
+				octet-ratios [16777216 65536 256 1]]
+		(apply + (map * octet-parts octet-ratios))))
