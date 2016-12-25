@@ -14,7 +14,7 @@
 		"16779264|16780031|24|asia|china|cn|86|unknown|guangdong|73|guangzhou|61|510000|0|8|23.12472086|113.2386109|0|0|0|unknown|unknown|none|N|0|0|0|1307256210|0"
 		"16780032|16780799|24|asia|china|cn|99|unknown|guangdong|95|guangzhou|80|510000|0|8|23.12472086|113.2386109|0|0|0|unknown|unknown|none|N|0|0|0|1307256210|0"
 		"16780800|16781311|24|asia|china|cn|86|unknown|guangdong|73|guangzhou|61|510000|0|8|23.12472086|113.2386109|0|0|0|unknown|unknown|none|N|0|0|0|1307256210|0"
-		"16781312|16785407|24|asia|japan|jp|86|unknown|tokyo|73|tokyo|61|162-0843|0|9|35.6895|139.6917|0|0|0|unknown|unknown|none|N|0|0|0|1307635324|0"
+		"16781313|16785407|24|asia|japan|jp|86|unknown|tokyo|73|tokyo|61|162-0843|0|9|35.6895|139.6917|0|0|0|unknown|unknown|none|N|0|0|0|1307635324|0"
 		"16785408|16786943|24|asia|china|cn|86|unknown|guangdong|73|guangzhou|61|510000|0|8|23.12472086|113.2386109|0|0|0|unknown|unknown|none|N|0|0|0|1307256210|0"
 		"16786944|16787199|24|asia|china|cn|99|unknown|guangdong|95|guangzhou|80|510000|0|8|23.12472086|113.2386109|0|0|0|tx|high|fixed|N|0|0|0|1307256210|0"])
 
@@ -48,15 +48,18 @@
 	 		false [1 3 37 73] [3 4 37 73]))
 
 
+(defn str->rdr [txt]
+	(io/reader (io/input-stream (.getBytes txt))))
+
 (def compacted-txt
-	(let [rdr (io/reader (io/input-stream (.getBytes quova-data-snippet-str)))
+	(let [rdr (str->rdr quova-data-snippet-str)
 				wrt (java.io.StringWriter.)]
 		(compact rdr wrt)
 		(.toString wrt)))
 
 
 (deftest compact-test
-	(let [rdr (io/reader (io/input-stream (.getBytes quova-data-snippet-str)))
+	(let [rdr (str->rdr quova-data-snippet-str)
 				wrt (java.io.StringWriter.)]
 		(compact rdr wrt)
 		(is (= (.toString wrt)
@@ -64,8 +67,32 @@
 [16777472 16778239 26 119]
 [16778240 16779263 -37 144]
 [16779264 16781311 23 113]
-[16781312 16785407 35 139]
+[16781313 16785407 35 139]
 [16785408 16787199 23 113]\n"))))
+
+
+(deftest load-compacted-arr-test
+	(let [compacted (load-compacted-arr (str->rdr compacted-txt))]
+		(is (= 6 (alength compacted)))
+	(are [result input] (= result (into [] input))
+		[16777216 16777471 -27 153] (aget compacted 0)
+		[16785408 16787199 23 113] (aget compacted 5))))
+
+
+(deftest find-data-test
+	(let [compacted (load-compacted-arr (str->rdr compacted-txt))]
+		(are [input result] (= result (aget (find-data compacted input) 0))
+			16777216	16777216
+			16777217	16777216
+			16777471  16777216
+			16777472	16777472
+			16777480	16777472
+			16785408	16785408
+			16787199	16785408)
+		(is (nil? (find-data compacted 16777215)))
+		(is (nil? (find-data compacted 16787200)))
+		(is (nil? (find-data compacted 16781312)))))
+
 
 
 

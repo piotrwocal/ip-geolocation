@@ -51,31 +51,37 @@
 	(compact (io/reader QUOVA_FILE_NAME) (io/writer QUOVA_COMPACTED_FILE_NAME)))
 
 
-(defn load-compacted-arr [file-name]
-	(->> (io/reader file-name)
+(defn load-compacted-arr [rdr]
+	(with-open [rdr rdr]
+		(->> rdr
 			 line-seq
 			 (map read-string)
 			 (map (partial into-array Long/TYPE))
-			 into-array))
+			 into-array)))
 
 
-(def compacted-arr (load-compacted-arr "../QUOVA-10-compacted.dat"))
+(def compacted-arr
+	(load-compacted-arr (io/reader "../QUOVA-10-compacted.dat")))
+
+
+(defn in-range? [value row-data]
+	(<= (aget row-data 0) value (aget row-data 1)))
 
 
 (defn find-data
 	([data to-find]
 	  (find-data data to-find 0 (dec (alength data))))
 	([data to-find left right]
-		(let [mid-index (quot (+ right left) k2)
-					mid-value (aget data mid-index 0)]
-			(if (> right left)
+		(let [mid-idx (quot (+ right left) 2)
+					mid-data (aget data mid-idx)
+					mid-value (aget mid-data 0)]
+			(if (>= right left)
 				(cond
-					(= to-find mid-value) (aget data mid-index)
-					(> to-find mid-value) (recur data to-find (inc mid-index) right)
-					(< to-find mid-value)	(recur data to-find left (dec mid-index)))
-				(aget data (Math/max right 0))))))
-
-
-
-
-
+					(in-range? to-find mid-data) mid-data
+					(> to-find mid-value) (recur data to-find (inc mid-idx) right)
+					(< to-find mid-value)	(recur data to-find left (dec mid-idx)))
+				(let [lo-idx (Math/max (dec mid-idx) 0)
+							hi-idx (Math/min (inc mid-idx) (dec (alength data)))]
+					(cond
+						(in-range? to-find (aget data lo-idx)) (aget data lo-idx)
+						(in-range? to-find (aget data hi-idx)) (aget data hi-idx)))))))
