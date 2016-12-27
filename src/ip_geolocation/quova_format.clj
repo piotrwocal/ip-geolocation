@@ -1,4 +1,4 @@
-(ns ip-geolocation.quova-ip-format
+(ns ip-geolocation.quova-format
 	(:require [clojure.string :as str]))
 
 
@@ -17,6 +17,3 @@
 			 (map str)
 			 (interpose ".")
 			 (apply str)))
-
-
-

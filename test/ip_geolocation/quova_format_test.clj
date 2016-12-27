@@ -1,6 +1,6 @@
-(ns ip-geolocation.quova-ip-format-test
+(ns ip-geolocation.quova-format-test
 	(:use [clojure.test :only [deftest is are]])
-	(:require [ip-geolocation.quova-ip-format :refer :all]))
+	(:require [ip-geolocation.quova-format :refer :all]))
 
 
 (deftest octetIp->longIp-test
@@ -16,3 +16,4 @@
     3401190660   "202.186.13.4"
     37           "0.0.0.37"
     16777216     "1.0.0.0"))
+

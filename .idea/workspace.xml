@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c91d8dfc-0815-4b7c-8cfe-d553cad8278b" name="Default" comment="implementation of compactation and first find-data method">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ip_geolocation/quova_ip_format.clj" afterPath="$PROJECT_DIR$/src/ip_geolocation/quova_format.clj" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/ip_geolocation/quova_ip_format_test.clj" afterPath="$PROJECT_DIR$/test/ip_geolocation/quova_format_test.clj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/replstate.xml" afterPath="$PROJECT_DIR$/.idea/replstate.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ip_geolocation/quova_file.clj" afterPath="$PROJECT_DIR$/src/ip_geolocation/quova_file.clj" />
@@ -26,13 +28,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="quova_file.clj" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ip_geolocation/quova_file.clj">
+      <file leaf-file-name="quova_format_test.clj" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/ip_geolocation/quova_format_test.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="583">
-              <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+            <state relative-caret-position="323">
+              <caret line="19" column="46" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding>
-                <marker date="1482705579000" expanded="true" signature="1598:1609" ph="(defn load-data-arr ...)" />
+                <marker date="1482852897000" expanded="true" signature="0:82" ph="(ns ip-geolocation.quova-ip-format-test ...)" />
               </folding>
             </state>
           </provider>
@@ -55,15 +57,21 @@
         <option value="$PROJECT_DIR$/src/ip_geolocation/quova_ip_format.clj" />
         <option value="$PROJECT_DIR$/test/ip_geolocation/quova_ip_format_test.clj" />
         <option value="$PROJECT_DIR$/project.clj" />
-        <option value="$PROJECT_DIR$/test/ip_geolocation/quova_file_test.clj" />
+        <option value="$PROJECT_DIR$/test/ip_geolocation/quova_ip_geo_test.clj" />
+        <option value="$PROJECT_DIR$/src/ip_geolocation/quova_ip_geo.clj" />
+        <option value="$PROJECT_DIR$/src/ip_geolocation/quova_format.clj" />
+        <option value="$PROJECT_DIR$/test/ip_geolocation/quova_format.clj" />
+        <option value="$PROJECT_DIR$/test/ip_geolocation/quova_format_test.clj" />
         <option value="$PROJECT_DIR$/src/ip_geolocation/quova_file.clj" />
+        <option value="$PROJECT_DIR$/test/ip_geolocation/quova_file_test.clj" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="2" />
     <option name="y" value="23" />
-    <option name="width" value="1436" />
-    <option name="height" value="877" />
+    <option name="width" value="1916" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -199,7 +207,60 @@
       <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
-        <subPane />
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ip-geolocation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ip-geolocation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ip-geolocation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ip-geolocation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ip-geolocation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ip_geolocation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ip-geolocation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ip-geolocation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ip_geolocation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
       </pane>
       <pane id="PackagesPane" />
     </panes>
@@ -223,7 +284,7 @@
       <recent name="$PROJECT_DIR$/src/ip_geolocation" />
     </key>
   </component>
-  <component name="ReplState" timestamp="1482705579951">{:repl-history {:ide [], :local [&quot;(doc pprint)&quot; &quot;(pprint\n\t(find-index compacted-arr 16 0 (alength compacted-arr)))&quot; &quot;(pprint (range 10))&quot; &quot;(defn find-index [data to-find left right]\n\t(let [mid-index (/ (+ right left) 2)\n\t\t\t\tmid-value (aget data mid-index 0) \n\t\t\t\t_ (println \&quot;left=\&quot; left \&quot;, right=\&quot; right)]\n\t\t(if (&lt; right left)\n\t\t\tnil\n\t\t\t(cond\n\t\t\t\t(= to-find mid-value) (aget data mid-index)\n\t\t\t\t(&gt; to-find mid-value) (recur data to-find mid-index right)\n\t\t\t\t(&lt; to-find mid-value)\t(recur data to-find left mid-index)))))&quot; &quot;(defn find-index [data to-find left right]\n\t(let [mid-index (quot (+ right left) 2)\n\t\t\t\tmid-value (aget data mid-index 0)\n\t\t\t\t_ (println \&quot;left=\&quot; left \&quot;, right=\&quot; right)]\n\t\t(if (&lt; right left)\n\t\t\tnil\n\t\t\t(cond\n\t\t\t\t(= to-find mid-value) (aget data mid-index)\n\t\t\t\t(&gt; to-find mid-value) (recur data to-find mid-index right)\n\t\t\t\t(&lt; to-find mid-value)\t(recur data to-find left mid-index)))))&quot; &quot;(pprint\n\t(find-index compacted-arr 16778240 0 (alength compacted-arr)))&quot; &quot;(pprint\n\t(find-index compacted-arr 1677 0 (alength compacted-arr)))&quot; &quot;(pprint\n\t(find-index compacted-arr 16777216 0 (alength compacted-arr)))&quot; &quot;(pprint\n\t(find-index compacted-arr 16777216 0 0))&quot; &quot;(pprint\n\t(find-index compacted-arr 16777216 0 1))&quot; &quot;(defn find-index [data to-find left right]\n\t(let [mid-index (quot (+ right left) 2)\n\t\t\t\tmid-value (aget data mid-index 0)\n\t\t\t\t_ (println \&quot;left=\&quot; left \&quot;, right=\&quot; right)]\n\t\t(if (= to-find mid-value) (aget data mid-index)\n\t\t\t(cond\n\t\t\t\t(= left right) nil\n\t\t\t\t(&gt; to-find mid-value) (recur data to-find mid-index right)\n\t\t\t\t(&lt; to-find mid-value)\t(recur data to-find left mid-index)))))&quot; &quot;(find-index compacted-arr 16777472 0 1)&quot; &quot;(pprint\n\t(find-index compacted-arr 16777472 0 2))&quot; &quot;(pprint\n\t(find-index compacted-arr 16777472 0 3))&quot; &quot;(defn find-index [data to-find left right]\n\t(let [mid-index (quot (+ right left) 2)\n\t\t\t\tmid-value (aget data mid-index 0)]\n\t\t(when-not (&lt; right left)\n\t\t\t(cond\n\t\t\t\t(= to-find mid-value) (aget data mid-index)\n\t\t\t\t(&gt; to-find mid-value) (recur data to-find (inc mid-index) right)\n\t\t\t\t(&lt; to-find mid-value)\t(recur data to-find left (dec mid-index))))))&quot; &quot;(pprint\n\t(find-index compacted-arr 16777472 0 1))&quot; &quot;(pprint\n\t(find-index compacted-arr 16777 0 1))&quot; &quot;(defn find-index [data to-find left right]\n\t(let [mid-index (quot (+ right left) 2)\n\t\t\t\tmid-value (aget data mid-index 0)\n\t\t\t\t_ (print \&quot;left=\&quot; left \&quot; ,right=\&quot; right \&quot; ,mid-index=\&quot; mid-index \&quot; , mid-value\&quot; mid-value)]\n\t\t(when-not (&lt; right left)\n\t\t\t(cond\n\t\t\t\t(= to-find mid-value) (aget data mid-index)\n\t\t\t\t(&gt; to-find mid-value) (recur data to-find (inc mid-index) right)\n\t\t\t\t(&lt; to-find mid-value)\t(recur data to-find left (dec mid-index))))))&quot; &quot;(pprint (find-index compacted-arr 16781312 0 9))&quot; &quot;(defn find-index [data to-find left right]\n\t(let [mid-index (quot (+ right left) 2)\n\t\t\t\tmid-value (aget data mid-index 0)\n\t\t\t\t_ (println \&quot;left=\&quot; left \&quot; ,right=\&quot; right \&quot; ,mid-index=\&quot; mid-index \&quot; , mid-value\&quot; mid-value)]\n\t\t(when-not (&lt; right left)\n\t\t\t(cond\n\t\t\t\t(= to-find mid-value) (aget data mid-index)\n\t\t\t\t(&gt; to-find mid-value) (recur data to-find (inc mid-index) right)\n\t\t\t\t(&lt; to-find mid-value)\t(recur data to-find left (dec mid-index))))))&quot; &quot;(defn find-index [data to-find left right]\n\t(let [mid-index (quot (+ right left) 2)\n\t\t\t\tmid-value (aget data mid-index 0)\n\t\t\t\t_ (println \&quot;left=\&quot; left \&quot; ,right=\&quot; right \&quot; ,mid-index=\&quot; mid-index \&quot; , mid-value=\&quot; mid-value)]\n\t\t(when-not (&lt; right left)\n\t\t\t(cond\n\t\t\t\t(= to-find mid-value) (aget data mid-index)\n\t\t\t\t(&gt; to-find mid-value) (recur data to-find (inc mid-index) right)\n\t\t\t\t(&lt; to-find mid-value)\t(recur data to-find left (dec mid-index))))))&quot; &quot;(defn find-index [data to-find left right]\n\t(let [mid-index (quot (+ right left) 2)\n\t\t\t\tmid-value (aget data mid-index 0)\n\t\t\t\t_ (println \&quot;left=\&quot;left \&quot; ,right=\&quot; right \&quot; ,mid-index=\&quot; mid-index \&quot; , mid-value=\&quot; mid-value)]\n\t\t(when-not (&lt; right left)\n\t\t\t(cond\n\t\t\t\t(= to-find mid-value) (aget data mid-index)\n\t\t\t\t(&gt; to-find mid-value) (recur data to-find (inc mid-index) right)\n\t\t\t\t(&lt; to-find mid-value)\t(recur data to-find left (dec mid-index))))))&quot; &quot;(pprint (find-index compacted-arr 16781313 0 9))&quot; &quot;(aget compacted-arr 7 0)&quot; &quot;(aget compacted-arr 0 7)&quot; &quot;(pprint (find-index compacted-arr 16781313 0 (alength compacted-arr)))&quot; &quot;(pprint (find-index compacted-arr 1 0 (alength compacted-arr)))&quot; &quot;9999999999999&quot; &quot;(defn find-index [data to-find left right]\n\t(let [mid-index (quot (+ right left) 2)\n\t\t\t\tmid-value (aget data mid-index 0)\n\t\t\t\t_ (println \&quot;left=\&quot; left \&quot; ,right=\&quot; right \&quot; ,mid-index=\&quot; mid-index \&quot; , mid-value=\&quot; mid-value)]\n\t\t(if (&lt; right left)\n\t\t\t(cond\n\t\t\t\t(= to-find mid-value) (aget data mid-index)\n\t\t\t\t(&gt; to-find mid-value) (recur data to-find (inc mid-index) right)\n\t\t\t\t(&lt; to-find mid-value)\t(recur data to-find left (dec mid-index)))\n\t\t\t(aget data (Math/max right 0)))))&quot; &quot;(aget compacted-arr 6)&quot; &quot;(aget compacted-arr 5)&quot; &quot;(alength compacted-arr)&quot; &quot;([data to-find left right]\n\t\t(let [mid-index (quot (+ right left) 2)\n\t\t\t\t\tmid-value (aget data mid-index 0)\n\t\t\t\t\t_ (println \&quot;left=\&quot; left \&quot; ,right=\&quot; right \&quot; ,mid-index=\&quot; mid-index \&quot; , mid-value=\&quot; mid-value)]\n\t\t\t(if (&lt; right left)\n\t\t\t\t(cond\n\t\t\t\t\t(= to-find mid-value) (aget data mid-index)\n\t\t\t\t\t(&gt; to-find mid-value) (recur data to-find (inc mid-index) right)\n\t\t\t\t\t(&lt; to-find mid-value)\t(recur data to-find left (dec mid-index)))\n\t\t\t\t(aget data (Math/max right 0)))))&quot; &quot;(defn find-index\n\t([data to-find]\n\t  (find-index data to-find 0 (dec (alength data))))\n\t([data to-find left right]\n\t\t(let [mid-index (quot (+ right left) 2)\n\t\t\t\t\tmid-value (aget data mid-index 0)\n\t\t\t\t\t_ (println \&quot;left=\&quot; left \&quot; ,right=\&quot; right \&quot; ,mid-index=\&quot; mid-index \&quot; , mid-value=\&quot; mid-value)]\n\t\t\t(if (&lt; right left)\n\t\t\t\t(cond\n\t\t\t\t\t(= to-find mid-value) (aget data mid-index)\n\t\t\t\t\t(&gt; to-find mid-value) (recur data to-find (inc mid-index) right)\n\t\t\t\t\t(&lt; to-find mid-value)\t(recur data to-find left (dec mid-index)))\n\t\t\t\t(aget data (Math/max right 0))))))&quot; &quot;(pprint (find-index compacted-arr 9999999999999 0 (alength compacted-arr)))&quot; &quot;(pprint (find-index compacted-arr 9999999999999 ))&quot; &quot;(pprint (find-index compacted-arr 9 1 ))&quot; &quot;(defn find-index\n\t([data to-find]\n\t  (find-index data to-find 0 (dec (alength data))))\n\t([data to-find left right]\n\t\t(let [mid-index (quot (+ right left) 2)\n\t\t\t\t\tmid-value (aget data mid-index 0)\n\t\t\t\t\t_ (println \&quot;left=\&quot; left \&quot; ,right=\&quot; right \&quot; ,mid-index=\&quot; mid-index \&quot; , mid-value=\&quot; mid-value)]\n\t\t\t(if (&lt; right left)\n\t\t\t\t(cond\n\t\t\t\t\t(= to-find mid-value) (aget data mid-index)\n\t\t\t\t\t(&gt; to-find mid-value) (recur data to-find (inc mid-index) right)\n\t\t\t\t\t(&lt; to-find mid-value)\t(recur data to-find left (dec mid-index)))\n\t\t\t\t(aget data right )))))&quot; &quot;(pprint (find-index compacted-arr 1))&quot; &quot;(defn find-index\n\t([data to-find]\n\t  (find-index data to-find 0 (dec (alength data))))\n\t([data to-find left right]\n\t\t(let [mid-index (quot (+ right left) 2)\n\t\t\t\t\tmid-value (aget data mid-index 0)\n\t\t\t\t\t_ (println \&quot;left=\&quot; left \&quot; ,right=\&quot; right \&quot; ,mid-index=\&quot; mid-index \&quot; , mid-value=\&quot; mid-value)]\n\t\t\t(if (&gt; right left)\n\t\t\t\t(cond\n\t\t\t\t\t(= to-find mid-value) (aget data mid-index)\n\t\t\t\t\t(&gt; to-find mid-value) (recur data to-find (inc mid-index) right)\n\t\t\t\t\t(&lt; to-find mid-value)\t(recur data to-find left (dec mid-index)))\n\t\t\t\t(aget data right )))))&quot; &quot;(pprint (find-index compacted-arr 16778240))&quot; &quot;([data to-find left right]\n\t\t(let [mid-index (quot (+ right left) 2)\n\t\t\t\t\tmid-value (aget data mid-index 0)\n\t\t\t\t\t_ (println \&quot;left=\&quot; left \&quot; ,right=\&quot; right \&quot; ,mid-index=\&quot; mid-index \&quot; , mid-value=\&quot; mid-value)]\n\t\t\t(if (&gt; right left)\n\t\t\t\t(cond\n\t\t\t\t\t(= to-find mid-value) (aget data mid-index)\n\t\t\t\t\t(&gt; to-find mid-value) (recur data to-find (inc mid-index) right)\n\t\t\t\t\t(&lt; to-find mid-value)\t(recur data to-find left (dec mid-index)))\n\t\t\t\t(aget data (Math/max right 0)))))&quot; &quot;(defn find-index\n\t([data to-find]\n\t  (find-index data to-find 0 (dec (alength data))))\n\t([data to-find left right]\n\t\t(let [mid-index (quot (+ right left) 2)\n\t\t\t\t\tmid-value (aget data mid-index 0)\n\t\t\t\t\t_ (println \&quot;left=\&quot; left \&quot; ,right=\&quot; right \&quot; ,mid-index=\&quot; mid-index \&quot; , mid-value=\&quot; mid-value)]\n\t\t\t(if (&gt; right left)\n\t\t\t\t(cond\n\t\t\t\t\t(= to-find mid-value) (aget data mid-index)\n\t\t\t\t\t(&gt; to-find mid-value) (recur data to-find (inc mid-index) right)\n\t\t\t\t\t(&lt; to-find mid-value)\t(recur data to-find left (dec mid-index)))\n\t\t\t\t(aget data (Math/max right 0))))))&quot; &quot;(pprint (find-index compacted-arr 16))&quot; &quot;(pprint (find-index compacted-arr 9999999999999))&quot; &quot;(use 'ip-geolocation.quova-file :reload)&quot; &quot;(print \n\tcompact-txt)&quot; &quot;(pprint \n\tcompact-txt)&quot; &quot;(pprint \n\tcompacted-txt)&quot; &quot;(spit \&quot;../test-compacted-data.dat\&quot; compacted-txt)&quot; &quot;(def compacted-data \n\t(load-compacted-arr \&quot;../test-compacted-data.dat\&quot;))&quot; &quot;(pprint compacted-data)&quot; &quot;(defn load-data-arr [rdr]\n\t(with-open [rdr rdr]\n\t\t(-&gt;&gt; rdr\n\t\t\t\t line-seq\n\t\t\t\t (map read-string)\n\t\t\t\t (map (partial into-array Long/TYPE))\n\t\t\t\t into-array)))&quot; &quot;(def compacted-arr (load-compacted-arr \&quot;../QUOVA-10-compacted.dat\&quot;))&quot; &quot;(load-compacted-arr (io/reader (io/input-stream (.getBytes quova-data-snippet-str))))&quot; &quot;(type (io/reader (io/input-stream (.getBytes quova-data-snippet-str))))&quot; &quot;(type (load-compacted-arr \n\t\t\t\t(io/reader (io/input-stream (.getBytes quova-data-snippet-str)))))&quot; &quot;(defn load-compacted-arr [rdr]\n\t(-&gt;&gt; rdr\n\t\t line-seq\n\t\t (map read-string)\n\t\t (map (partial into-array Long/TYPE))\n\t\t into-array))&quot; &quot;(defn load-compacted-arr [rdr]\n\t(with-open [rdr rdr]\n\t\t(-&gt;&gt; rdr\n\t\t\t line-seq\n\t\t\t (map read-string)\n\t\t\t (map (partial into-array Long/TYPE))\n\t\t\t into-array)))&quot; &quot;(def compacted-arr\n\t(load-compacted-arr (io/reader \&quot;../QUOVA-10-compacted.dat\&quot;)))&quot; &quot;(deftest load-compacted-arr-test\n\t(let [rdr (io/reader (io/input-stream (.getBytes quova-data-snippet-str)))]\n\t\t(is (= 6 (alength (load-compacted-arr rdr))))))&quot; &quot;(deftest load-compacted-arr-test\n\t(let [rdr (io/reader (io/input-stream (.getBytes quova-data-snippet-str)))]\n\t\t(is (= 6 6))))&quot; &quot;(use 'clojre.pprint)&quot; &quot;(use 'clojure.pprint)&quot; &quot;(let [rdr (io/reader (io/input-stream (.getBytes quova-data-snippet-str)))]\n\t(pprint (load-compacted-arr rdr)))&quot; &quot;(defn str-&gt;rdr [txt]\n\t(io/reader (io/input-stream (.getBytes txt))))&quot; &quot;(find-data compacted-arr 16777217)&quot; &quot;(pprint (find-data compacted-arr 16778240))&quot; &quot;(defn find-data\n\t([data to-find]\n\t  (find-data data to-find 0 (dec (alength data))))\n\t([data to-find left right]\n\t\t(let [mid-index (quot (+ right left) 2)\n\t\t\t\t\tmid-value (aget data mid-index 0)\n\t\t\t\t\t_ (println \&quot;mid-index\&quot; mid-index \&quot; mid-value\&quot; mid-value)]\n\t\t\t(if (&gt; right left)\n\t\t\t\t(cond\n\t\t\t\t\t(= to-find mid-value) (aget data mid-index)\n\t\t\t\t\t(&gt; to-find mid-value) (recur data to-find (inc mid-index) right)\n\t\t\t\t\t(&lt; to-find mid-value)\t(recur data to-find left (dec mid-index)))\n\t\t\t\t(aget data (Math/max right 0))))))&quot; &quot;(defn find-data\n\t([data to-find]\n\t  (find-data data to-find 0 (dec (alength data))))\n\t([data to-find left right]\n\t\t(let [mid-index (quot (+ right left) 2)\n\t\t\t\t\tmid-value (aget data mid-index 0)\n\t\t\t\t\t_ (println \&quot;left\&quot; left \&quot; right\&quot; right \&quot; mid-index\&quot; mid-index \&quot; mid-value\&quot; mid-value)]\n\t\t\t(if (&gt; right left)\n\t\t\t\t(cond\n\t\t\t\t\t(= to-find mid-value) (aget data mid-index)\n\t\t\t\t\t(&gt; to-find mid-value) (recur data to-find (inc mid-index) right)\n\t\t\t\t\t(&lt; to-find mid-value)\t(recur data to-find left (dec mid-index)))\n\t\t\t\t(aget data (Math/max right 0))))))&quot; &quot;(&lt;= 1 2 3)&quot; &quot;(&lt;= 1 3 3)&quot; &quot;(&lt;= 1 1 3)&quot; &quot;(in-range? 123 (into-array [100 130 1 1]))&quot; &quot;(in-range? 123 (into-array [100 120 1 1]))&quot; &quot;(in-range? 123 (into-array [125 130 1 1]))&quot; &quot;(in-range? 125 (into-array [125 130 1 1]))&quot; &quot;(defn in-range? [value data]\n\t(&lt;= (aget data 0) value (aget data 1)))&quot; &quot;(defn in-range? [value row-data]\n\t(&lt;= (aget row-data 0) value (aget row-data 1)))&quot; &quot;(defn find-data\n\t([data to-find]\n\t  (find-data data to-find 0 (dec (alength data))))\n\t([data to-find left right]\n\t\t(let [mid-index (quot (+ right left) 2)\n\t\t\t\t\tmid-value (aget data mid-index 0)\n\t\t\t\t\t_ (println \&quot;left\&quot; left \&quot; right\&quot; right \&quot; mid-index\&quot; mid-index \&quot; mid-value\&quot; mid-value)]\n\t\t\t(if (&gt; right left)\n\t\t\t\t(cond\n\t\t\t\t\t(= to-find mid-value) (aget data mid-index)\n\t\t\t\t\t(&gt; to-find mid-value) (recur data to-find (inc mid-index) right)\n\t\t\t\t\t(&lt; to-find mid-value)\t(recur data to-find left (dec mid-index)))\n\t\t\t\t(cond \n\t\t\t\t\t(in-range? to-find (aget data mid-index)) (aget data mid-index)\n\t\t\t\t\t :else nil)))))&quot; &quot;(pprint (find-data compacted-arr 16777216))&quot; &quot;(defn find-data\n\t([data to-find]\n\t  (find-data data to-find 0 (dec (alength data))))\n\t([data to-find left right]\n\t\t(let [mid-index (quot (+ right left) 2)\n\t\t\t\t\tmid-value (aget data mid-index 0)\n\t\t\t\t\t_ (println \&quot;left\&quot; left \&quot; right\&quot; right \&quot; mid-index\&quot; mid-index \&quot; mid-value\&quot; mid-value)]\n\t\t\t(if (&gt; right left)\n\t\t\t\t(cond\n\t\t\t\t\t(= to-find mid-value) (aget data mid-index)\n\t\t\t\t\t(&gt; to-find mid-value) (recur data to-find (inc mid-index) right)\n\t\t\t\t\t(&lt; to-find mid-value)\t(recur data to-find left (dec mid-index)))\n\t\t\t\t(let [lower-index (Math/max (dec mid-index) 0)\n\t\t\t\t\t\t\thigher-index (Math/min (inc mid-index) (dec (alength data)))]\n\t\t\t\t(cond \n\t\t\t\t\t(in-range? to-find (aget data mid-index)) (aget data mid-index)\n\t\t\t\t\t(in-range? to-find (aget data lower-index)) (aget data lower-index)\n\t\t\t\t\t(in-range? to-find (aget data higher-index)) (aget data higher-index)))))))&quot; &quot;(pprint (find-data compacted-arr 16777217))&quot; &quot;(in-range? 131 (into-array [125 130 1 1]))&quot; &quot;(defn find-data\n\t([data to-find]\n\t  (find-data data to-find 0 (dec (alength data))))\n\t([data to-find left right]\n\t\t(let [mid-index (quot (+ right left) 2)\n\t\t\t\t\tmid-value (aget data mid-index 0)\n\t\t\t\t\t_ (println \&quot;left\&quot; left \&quot; right\&quot; right \&quot; mid-index\&quot; mid-index \&quot; mid-value\&quot; mid-value)]\n\t\t\t(if (&gt; right left)\n\t\t\t\t(cond\n\t\t\t\t\t(= to-find mid-value) (aget data mid-index)\n\t\t\t\t\t(&gt; to-find mid-value) (recur data to-find (inc mid-index) right)\n\t\t\t\t\t(&lt; to-find mid-value)\t(recur data to-find left (dec mid-index)))\n\t\t\t\t(let [lower-index (Math/max (dec mid-index) 0)\n\t\t\t\t\t\t\thigher-index (Math/min (inc mid-index) (dec (alength data)))]\n\t\t\t\t(condp in-range? mid-value\n\t\t\t\t\t(aget data mid-index) (aget data mid-index)\n\t\t\t\t\t(aget data lower-index) (aget data lower-index)\n\t\t\t\t\t(aget data higher-index) (aget data higher-index)))))))&quot; &quot;(defn find-data\n\t([data to-find]\n\t  (find-data data to-find 0 (dec (alength data))))\n\t([data to-find left right]\n\t\t(let [mid-index (quot (+ right left) 2)\n\t\t\t\t\tmid-value (aget data mid-index 0)\n\t\t\t\t\t_ (println \&quot;left\&quot; left \&quot; right\&quot; right \&quot; mid-index\&quot; mid-index \&quot; mid-value\&quot; mid-value)]\n\t\t\t(if (&gt; right left)\n\t\t\t\t(cond\n\t\t\t\t\t(= to-find mid-value) (aget data mid-index)\n\t\t\t\t\t(&gt; to-find mid-value) (recur data to-find (inc mid-index) right)\n\t\t\t\t\t(&lt; to-find mid-value)\t(recur data to-find left (dec mid-index)))\n\t\t\t\t(let [lower-index (Math/max (dec mid-index) 0)\n\t\t\t\t\t\t\thigher-index (Math/min (inc mid-index) (dec (alength data)))]\n\t\t\t\t(condp (fn[row-index value] (in-range? value (aget data row-index))) mid-value\n\t\t\t\t\tmid-index (aget data mid-index)\n\t\t\t\t\tlower-index (aget data lower-index)\n\t\t\t\t\thigher-index (aget data higher-index)))))))&quot; &quot;(defn find-data\n\t([data to-find]\n\t  (find-data data to-find 0 (dec (alength data))))\n\t([data to-find left right]\n\t\t(let [mid-index (quot (+ right left) 2)\n\t\t\t\t\tmid-value (aget data mid-index 0)\n\t\t\t\t\t_ (println \&quot;left\&quot; left \&quot; right\&quot; right \&quot; mid-index\&quot; mid-index \&quot; mid-value\&quot; mid-value)]\n\t\t\t(if (&gt; right left)\n\t\t\t\t(cond\n\t\t\t\t\t(= to-find mid-value) (aget data mid-index)\n\t\t\t\t\t(&gt; to-find mid-value) (recur data to-find (inc mid-index) right)\n\t\t\t\t\t(&lt; to-find mid-value)\t(recur data to-find left (dec mid-index)))\n\t\t\t\t(let [lower-index (Math/max (dec mid-index) 0)\n\t\t\t\t\t\t\thigher-index (Math/min (inc mid-index) (dec (alength data)))]\n\t\t\t\t(condp #(in-range? %2 (aget data %1)) mid-value\n\t\t\t\t\tmid-index (aget data mid-index)\n\t\t\t\t\tlower-index (aget data lower-index)\n\t\t\t\t\thigher-index (aget data higher-index)))))))&quot; &quot;(defn find-data\n\t([data to-find]\n\t  (find-data data to-find 0 (dec (alength data))))\n\t([data to-find left right]\n\t\t(let [mid-index (quot (+ right left) 2)\n\t\t\t\t\tmid-value (aget data mid-index 0)\n\t\t\t\t\t_ (println \&quot;left\&quot; left \&quot; right\&quot; right \&quot; mid-index\&quot; mid-index \&quot; mid-value\&quot; mid-value)]\n\t\t\t(if (&gt; right left)\n\t\t\t\t(cond\n\t\t\t\t\t(= to-find mid-value) (aget data mid-index)\n\t\t\t\t\t(&gt; to-find mid-value) (recur data to-find (inc mid-index) right)\n\t\t\t\t\t(&lt; to-find mid-value)\t(recur data to-find left (dec mid-index)))\n\t\t\t\t(let [lower-index (Math/max (dec mid-index) 0)\n\t\t\t\t\t\t\thigher-index (Math/min (inc mid-index) (dec (alength data)))]\n\t\t\t\t(condp in-range? value\n\t\t\t\t\t(aget data mid-index) (aget data mid-index)\n\t\t\t\t\t(aget data lower-index) (aget data lower-index)\n\t\t\t\t\t(aget data higher-index) (aget data higher-index)))))))&quot; &quot;(defn find-data\n\t([data to-find]\n\t  (find-data data to-find 0 (dec (alength data))))\n\t([data to-find left right]\n\t\t(let [mid-index (quot (+ right left) 2)\n\t\t\t\t\tmid-value (aget data mid-index 0)\n\t\t\t\t\t_ (println \&quot;left\&quot; left \&quot; right\&quot; right \&quot; mid-index\&quot; mid-index \&quot; mid-value\&quot; mid-value)]\n\t\t\t(if (&gt; right left)\n\t\t\t\t(cond\n\t\t\t\t\t(= to-find mid-value) (aget data mid-index)\n\t\t\t\t\t(&gt; to-find mid-value) (recur data to-find (inc mid-index) right)\n\t\t\t\t\t(&lt; to-find mid-value)\t(recur data to-find left (dec mid-index)))\n\t\t\t\t(let [lower-index (Math/max (dec mid-index) 0)\n\t\t\t\t\t\t\thigher-index (Math/min (inc mid-index) (dec (alength data)))]\n\t\t\t\t(cond\n\t\t\t\t\t(in-range? to-find (aget data mid-index)) (aget data mid-index)\n\t\t\t\t\t(in-range? to-find (aget data lower-index)) (aget data lower-index)\n\t\t\t\t\t(in-range? to-find (aget data higher-index)) (aget data higher-index)))))))&quot; &quot;(defn find-data\n\t([data to-find]\n\t  (find-data data to-find 0 (dec (alength data))))\n\t([data to-find left right]\n\t\t(let [mid-index (quot (+ right left) 2)\n\t\t\t\t\tmid-value (aget data mid-index 0)\n\t\t\t\t\t_ (println \&quot;left\&quot; left \&quot; right\&quot; right \&quot; mid-index\&quot; mid-index \&quot; mid-value\&quot; mid-value)]\n\t\t\t(if (&gt; right left)\n\t\t\t\t(cond\n\t\t\t\t\t(in-range? to-find (aget data mid-index)) (aget data mid-index)\n\t\t\t\t\t(&gt; to-find mid-value) (recur data to-find (inc mid-index) right)\n\t\t\t\t\t(&lt; to-find mid-value)\t(recur data to-find left (dec mid-index)))))))&quot; &quot;(defn find-data\n\t([data to-find]\n\t  (find-data data to-find 0 (dec (alength data))))\n\t([data to-find left right]\n\t\t(let [mid-index (quot (+ right left) 2)\n\t\t\t\t\tmid-value (aget data mid-index 0)\n\t\t\t\t\t_ (println \&quot;left\&quot; left \&quot; right\&quot; right \&quot; mid-index\&quot; mid-index \&quot; mid-value\&quot; mid-value)]\n\t\t\t(if (&gt; right left)\n\t\t\t\t(cond\n\t\t\t\t\t(in-range? to-find (aget data mid-index)) (aget data mid-index)\n\t\t\t\t\t(&gt; to-find mid-value) (recur data to-find (inc mid-index) right)\n\t\t\t\t\t(&lt; to-find mid-value)\t(recur data to-find left (dec mid-index)))\n\t\t\t\t(let [lower-index (Math/max (dec mid-index) 0)\n\t\t\t\t\t\t\thigher-index (Math/min (inc mid-index) (dec (alength data)))]\n\t\t\t\t(cond\n\t\t\t\t\t(in-range? to-find (aget data lower-index)) (aget data lower-index)\n\t\t\t\t\t(in-range? to-find (aget data higher-index)) (aget data higher-index)))))))&quot; &quot;(defn find-data\n\t([data to-find]\n\t  (find-data data to-find 0 (dec (alength data))))\n\t([data to-find left right]\n\t\t(let [mid-index (quot (+ right left) 2)\n\t\t\t\t\tmid-value (aget data mid-index 0)\n\t\t\t\t\t_ (println \&quot;left\&quot; left \&quot; right\&quot; right \&quot; mid-index\&quot; mid-index \&quot; mid-value\&quot; mid-value)]\n\t\t\t(if (&gt;= right left)\n\t\t\t\t(cond\n\t\t\t\t\t(in-range? to-find (aget data mid-index)) (aget data mid-index)\n\t\t\t\t\t(&gt; to-find mid-value) (recur data to-find (inc mid-index) right)\n\t\t\t\t\t(&lt; to-find mid-value)\t(recur data to-find left (dec mid-index)))\n\t\t\t\t(let [lower-index (Math/max (dec mid-index) 0)\n\t\t\t\t\t\t\thigher-index (Math/min (inc mid-index) (dec (alength data)))]\n\t\t\t\t(cond\n\t\t\t\t\t(in-range? to-find (aget data lower-index)) (aget data lower-index)\n\t\t\t\t\t(in-range? to-find (aget data higher-index)) (aget data higher-index)))))))&quot; &quot;(pprint compacted-arr)&quot; &quot;(pprint (find-data compacted-arr 16777472))&quot; &quot;(pprint (find-data compacted-arr 16777471))&quot; &quot;(pprint (find-data compacted-arr 16771))&quot; &quot;(pprint (find-data compacted-arr 16781311))&quot; &quot;(defn find-data\n\t([data to-find]\n\t  (find-data data to-find 0 (dec (alength data))))\n\t([data to-find left right]\n\t\t(let [mid-idx (quot (+ right left) 2)\n\t\t\t\t\tmid-data (aget data mid-idx)\n\t\t\t\t\tmid-value (aget mid-data 0)]\n\t\t\t(if (&gt;= right left)\n\t\t\t\t(cond\n\t\t\t\t\t(in-range? to-find mid-data) mid-data\n\t\t\t\t\t(&gt; to-find mid-value) (recur data to-find (inc mid-idx) right)\n\t\t\t\t\t(&lt; to-find mid-value)\t(recur data to-find left (dec mid-idx)))\n\t\t\t\t(let [lo-idx (Math/max (dec mid-idx) 0)\n\t\t\t\t\t\t\thi-idx (Math/min (inc mid-idx) (dec (alength data)))]\n\t\t\t\t\t(cond\n\t\t\t\t\t\t(in-range? to-find (aget data lo-idx)) (aget data lo-idx)\n\t\t\t\t\t\t(in-range? to-find (aget data hi-idx)) (aget data hi-idx)))))))&quot; &quot;(pprint (find-data compacted-arr 16787200))&quot; &quot;(pprint (find-data compacted-arr 16787199))&quot; &quot;&quot;], :remote []}}</component>
+  <component name="ReplState" timestamp="1482856344640">{:repl-history {:ide [], :local [&quot;(pprint (find-index compacted-arr 16778240))&quot; &quot;([data to-find left right]\n\t\t(let [mid-index (quot (+ right left) 2)\n\t\t\t\t\tmid-value (aget data mid-index 0)\n\t\t\t\t\t_ (println \&quot;left=\&quot; left \&quot; ,right=\&quot; right \&quot; ,mid-index=\&quot; mid-index \&quot; , mid-value=\&quot; mid-value)]\n\t\t\t(if (&gt; right left)\n\t\t\t\t(cond\n\t\t\t\t\t(= to-find mid-value) (aget data mid-index)\n\t\t\t\t\t(&gt; to-find mid-value) (recur data to-find (inc mid-index) right)\n\t\t\t\t\t(&lt; to-find mid-value)\t(recur data to-find left (dec mid-index)))\n\t\t\t\t(aget data (Math/max right 0)))))&quot; &quot;(defn find-index\n\t([data to-find]\n\t  (find-index data to-find 0 (dec (alength data))))\n\t([data to-find left right]\n\t\t(let [mid-index (quot (+ right left) 2)\n\t\t\t\t\tmid-value (aget data mid-index 0)\n\t\t\t\t\t_ (println \&quot;left=\&quot; left \&quot; ,right=\&quot; right \&quot; ,mid-index=\&quot; mid-index \&quot; , mid-value=\&quot; mid-value)]\n\t\t\t(if (&gt; right left)\n\t\t\t\t(cond\n\t\t\t\t\t(= to-find mid-value) (aget data mid-index)\n\t\t\t\t\t(&gt; to-find mid-value) (recur data to-find (inc mid-index) right)\n\t\t\t\t\t(&lt; to-find mid-value)\t(recur data to-find left (dec mid-index)))\n\t\t\t\t(aget data (Math/max right 0))))))&quot; &quot;(pprint (find-index compacted-arr 16))&quot; &quot;(pprint (find-index compacted-arr 9999999999999))&quot; &quot;(use 'ip-geolocation.quova-file :reload)&quot; &quot;(print \n\tcompact-txt)&quot; &quot;(pprint \n\tcompact-txt)&quot; &quot;(pprint \n\tcompacted-txt)&quot; &quot;(spit \&quot;../test-compacted-data.dat\&quot; compacted-txt)&quot; &quot;(def compacted-data \n\t(load-compacted-arr \&quot;../test-compacted-data.dat\&quot;))&quot; &quot;(pprint compacted-data)&quot; &quot;(defn load-data-arr [rdr]\n\t(with-open [rdr rdr]\n\t\t(-&gt;&gt; rdr\n\t\t\t\t line-seq\n\t\t\t\t (map read-string)\n\t\t\t\t (map (partial into-array Long/TYPE))\n\t\t\t\t into-array)))&quot; &quot;(def compacted-arr (load-compacted-arr \&quot;../QUOVA-10-compacted.dat\&quot;))&quot; &quot;(load-compacted-arr (io/reader (io/input-stream (.getBytes quova-data-snippet-str))))&quot; &quot;(type (io/reader (io/input-stream (.getBytes quova-data-snippet-str))))&quot; &quot;(type (load-compacted-arr \n\t\t\t\t(io/reader (io/input-stream (.getBytes quova-data-snippet-str)))))&quot; &quot;(defn load-compacted-arr [rdr]\n\t(-&gt;&gt; rdr\n\t\t line-seq\n\t\t (map read-string)\n\t\t (map (partial into-array Long/TYPE))\n\t\t into-array))&quot; &quot;(defn load-compacted-arr [rdr]\n\t(with-open [rdr rdr]\n\t\t(-&gt;&gt; rdr\n\t\t\t line-seq\n\t\t\t (map read-string)\n\t\t\t (map (partial into-array Long/TYPE))\n\t\t\t into-array)))&quot; &quot;(def compacted-arr\n\t(load-compacted-arr (io/reader \&quot;../QUOVA-10-compacted.dat\&quot;)))&quot; &quot;(deftest load-compacted-arr-test\n\t(let [rdr (io/reader (io/input-stream (.getBytes quova-data-snippet-str)))]\n\t\t(is (= 6 (alength (load-compacted-arr rdr))))))&quot; &quot;(deftest load-compacted-arr-test\n\t(let [rdr (io/reader (io/input-stream (.getBytes quova-data-snippet-str)))]\n\t\t(is (= 6 6))))&quot; &quot;(use 'clojre.pprint)&quot; &quot;(let [rdr (io/reader (io/input-stream (.getBytes quova-data-snippet-str)))]\n\t(pprint (load-compacted-arr rdr)))&quot; &quot;(defn str-&gt;rdr [txt]\n\t(io/reader (io/input-stream (.getBytes txt))))&quot; &quot;(find-data compacted-arr 16777217)&quot; &quot;(pprint (find-data compacted-arr 16778240))&quot; &quot;(defn find-data\n\t([data to-find]\n\t  (find-data data to-find 0 (dec (alength data))))\n\t([data to-find left right]\n\t\t(let [mid-index (quot (+ right left) 2)\n\t\t\t\t\tmid-value (aget data mid-index 0)\n\t\t\t\t\t_ (println \&quot;mid-index\&quot; mid-index \&quot; mid-value\&quot; mid-value)]\n\t\t\t(if (&gt; right left)\n\t\t\t\t(cond\n\t\t\t\t\t(= to-find mid-value) (aget data mid-index)\n\t\t\t\t\t(&gt; to-find mid-value) (recur data to-find (inc mid-index) right)\n\t\t\t\t\t(&lt; to-find mid-value)\t(recur data to-find left (dec mid-index)))\n\t\t\t\t(aget data (Math/max right 0))))))&quot; &quot;(defn find-data\n\t([data to-find]\n\t  (find-data data to-find 0 (dec (alength data))))\n\t([data to-find left right]\n\t\t(let [mid-index (quot (+ right left) 2)\n\t\t\t\t\tmid-value (aget data mid-index 0)\n\t\t\t\t\t_ (println \&quot;left\&quot; left \&quot; right\&quot; right \&quot; mid-index\&quot; mid-index \&quot; mid-value\&quot; mid-value)]\n\t\t\t(if (&gt; right left)\n\t\t\t\t(cond\n\t\t\t\t\t(= to-find mid-value) (aget data mid-index)\n\t\t\t\t\t(&gt; to-find mid-value) (recur data to-find (inc mid-index) right)\n\t\t\t\t\t(&lt; to-find mid-value)\t(recur data to-find left (dec mid-index)))\n\t\t\t\t(aget data (Math/max right 0))))))&quot; &quot;(&lt;= 1 2 3)&quot; &quot;(&lt;= 1 3 3)&quot; &quot;(&lt;= 1 1 3)&quot; &quot;(in-range? 123 (into-array [100 130 1 1]))&quot; &quot;(in-range? 123 (into-array [100 120 1 1]))&quot; &quot;(in-range? 123 (into-array [125 130 1 1]))&quot; &quot;(in-range? 125 (into-array [125 130 1 1]))&quot; &quot;(defn in-range? [value data]\n\t(&lt;= (aget data 0) value (aget data 1)))&quot; &quot;(defn in-range? [value row-data]\n\t(&lt;= (aget row-data 0) value (aget row-data 1)))&quot; &quot;(defn find-data\n\t([data to-find]\n\t  (find-data data to-find 0 (dec (alength data))))\n\t([data to-find left right]\n\t\t(let [mid-index (quot (+ right left) 2)\n\t\t\t\t\tmid-value (aget data mid-index 0)\n\t\t\t\t\t_ (println \&quot;left\&quot; left \&quot; right\&quot; right \&quot; mid-index\&quot; mid-index \&quot; mid-value\&quot; mid-value)]\n\t\t\t(if (&gt; right left)\n\t\t\t\t(cond\n\t\t\t\t\t(= to-find mid-value) (aget data mid-index)\n\t\t\t\t\t(&gt; to-find mid-value) (recur data to-find (inc mid-index) right)\n\t\t\t\t\t(&lt; to-find mid-value)\t(recur data to-find left (dec mid-index)))\n\t\t\t\t(cond \n\t\t\t\t\t(in-range? to-find (aget data mid-index)) (aget data mid-index)\n\t\t\t\t\t :else nil)))))&quot; &quot;(pprint (find-data compacted-arr 16777216))&quot; &quot;(defn find-data\n\t([data to-find]\n\t  (find-data data to-find 0 (dec (alength data))))\n\t([data to-find left right]\n\t\t(let [mid-index (quot (+ right left) 2)\n\t\t\t\t\tmid-value (aget data mid-index 0)\n\t\t\t\t\t_ (println \&quot;left\&quot; left \&quot; right\&quot; right \&quot; mid-index\&quot; mid-index \&quot; mid-value\&quot; mid-value)]\n\t\t\t(if (&gt; right left)\n\t\t\t\t(cond\n\t\t\t\t\t(= to-find mid-value) (aget data mid-index)\n\t\t\t\t\t(&gt; to-find mid-value) (recur data to-find (inc mid-index) right)\n\t\t\t\t\t(&lt; to-find mid-value)\t(recur data to-find left (dec mid-index)))\n\t\t\t\t(let [lower-index (Math/max (dec mid-index) 0)\n\t\t\t\t\t\t\thigher-index (Math/min (inc mid-index) (dec (alength data)))]\n\t\t\t\t(cond \n\t\t\t\t\t(in-range? to-find (aget data mid-index)) (aget data mid-index)\n\t\t\t\t\t(in-range? to-find (aget data lower-index)) (aget data lower-index)\n\t\t\t\t\t(in-range? to-find (aget data higher-index)) (aget data higher-index)))))))&quot; &quot;(pprint (find-data compacted-arr 16777217))&quot; &quot;(in-range? 131 (into-array [125 130 1 1]))&quot; &quot;(defn find-data\n\t([data to-find]\n\t  (find-data data to-find 0 (dec (alength data))))\n\t([data to-find left right]\n\t\t(let [mid-index (quot (+ right left) 2)\n\t\t\t\t\tmid-value (aget data mid-index 0)\n\t\t\t\t\t_ (println \&quot;left\&quot; left \&quot; right\&quot; right \&quot; mid-index\&quot; mid-index \&quot; mid-value\&quot; mid-value)]\n\t\t\t(if (&gt; right left)\n\t\t\t\t(cond\n\t\t\t\t\t(= to-find mid-value) (aget data mid-index)\n\t\t\t\t\t(&gt; to-find mid-value) (recur data to-find (inc mid-index) right)\n\t\t\t\t\t(&lt; to-find mid-value)\t(recur data to-find left (dec mid-index)))\n\t\t\t\t(let [lower-index (Math/max (dec mid-index) 0)\n\t\t\t\t\t\t\thigher-index (Math/min (inc mid-index) (dec (alength data)))]\n\t\t\t\t(condp in-range? mid-value\n\t\t\t\t\t(aget data mid-index) (aget data mid-index)\n\t\t\t\t\t(aget data lower-index) (aget data lower-index)\n\t\t\t\t\t(aget data higher-index) (aget data higher-index)))))))&quot; &quot;(defn find-data\n\t([data to-find]\n\t  (find-data data to-find 0 (dec (alength data))))\n\t([data to-find left right]\n\t\t(let [mid-index (quot (+ right left) 2)\n\t\t\t\t\tmid-value (aget data mid-index 0)\n\t\t\t\t\t_ (println \&quot;left\&quot; left \&quot; right\&quot; right \&quot; mid-index\&quot; mid-index \&quot; mid-value\&quot; mid-value)]\n\t\t\t(if (&gt; right left)\n\t\t\t\t(cond\n\t\t\t\t\t(= to-find mid-value) (aget data mid-index)\n\t\t\t\t\t(&gt; to-find mid-value) (recur data to-find (inc mid-index) right)\n\t\t\t\t\t(&lt; to-find mid-value)\t(recur data to-find left (dec mid-index)))\n\t\t\t\t(let [lower-index (Math/max (dec mid-index) 0)\n\t\t\t\t\t\t\thigher-index (Math/min (inc mid-index) (dec (alength data)))]\n\t\t\t\t(condp (fn[row-index value] (in-range? value (aget data row-index))) mid-value\n\t\t\t\t\tmid-index (aget data mid-index)\n\t\t\t\t\tlower-index (aget data lower-index)\n\t\t\t\t\thigher-index (aget data higher-index)))))))&quot; &quot;(defn find-data\n\t([data to-find]\n\t  (find-data data to-find 0 (dec (alength data))))\n\t([data to-find left right]\n\t\t(let [mid-index (quot (+ right left) 2)\n\t\t\t\t\tmid-value (aget data mid-index 0)\n\t\t\t\t\t_ (println \&quot;left\&quot; left \&quot; right\&quot; right \&quot; mid-index\&quot; mid-index \&quot; mid-value\&quot; mid-value)]\n\t\t\t(if (&gt; right left)\n\t\t\t\t(cond\n\t\t\t\t\t(= to-find mid-value) (aget data mid-index)\n\t\t\t\t\t(&gt; to-find mid-value) (recur data to-find (inc mid-index) right)\n\t\t\t\t\t(&lt; to-find mid-value)\t(recur data to-find left (dec mid-index)))\n\t\t\t\t(let [lower-index (Math/max (dec mid-index) 0)\n\t\t\t\t\t\t\thigher-index (Math/min (inc mid-index) (dec (alength data)))]\n\t\t\t\t(condp #(in-range? %2 (aget data %1)) mid-value\n\t\t\t\t\tmid-index (aget data mid-index)\n\t\t\t\t\tlower-index (aget data lower-index)\n\t\t\t\t\thigher-index (aget data higher-index)))))))&quot; &quot;(defn find-data\n\t([data to-find]\n\t  (find-data data to-find 0 (dec (alength data))))\n\t([data to-find left right]\n\t\t(let [mid-index (quot (+ right left) 2)\n\t\t\t\t\tmid-value (aget data mid-index 0)\n\t\t\t\t\t_ (println \&quot;left\&quot; left \&quot; right\&quot; right \&quot; mid-index\&quot; mid-index \&quot; mid-value\&quot; mid-value)]\n\t\t\t(if (&gt; right left)\n\t\t\t\t(cond\n\t\t\t\t\t(= to-find mid-value) (aget data mid-index)\n\t\t\t\t\t(&gt; to-find mid-value) (recur data to-find (inc mid-index) right)\n\t\t\t\t\t(&lt; to-find mid-value)\t(recur data to-find left (dec mid-index)))\n\t\t\t\t(let [lower-index (Math/max (dec mid-index) 0)\n\t\t\t\t\t\t\thigher-index (Math/min (inc mid-index) (dec (alength data)))]\n\t\t\t\t(condp in-range? value\n\t\t\t\t\t(aget data mid-index) (aget data mid-index)\n\t\t\t\t\t(aget data lower-index) (aget data lower-index)\n\t\t\t\t\t(aget data higher-index) (aget data higher-index)))))))&quot; &quot;(defn find-data\n\t([data to-find]\n\t  (find-data data to-find 0 (dec (alength data))))\n\t([data to-find left right]\n\t\t(let [mid-index (quot (+ right left) 2)\n\t\t\t\t\tmid-value (aget data mid-index 0)\n\t\t\t\t\t_ (println \&quot;left\&quot; left \&quot; right\&quot; right \&quot; mid-index\&quot; mid-index \&quot; mid-value\&quot; mid-value)]\n\t\t\t(if (&gt; right left)\n\t\t\t\t(cond\n\t\t\t\t\t(= to-find mid-value) (aget data mid-index)\n\t\t\t\t\t(&gt; to-find mid-value) (recur data to-find (inc mid-index) right)\n\t\t\t\t\t(&lt; to-find mid-value)\t(recur data to-find left (dec mid-index)))\n\t\t\t\t(let [lower-index (Math/max (dec mid-index) 0)\n\t\t\t\t\t\t\thigher-index (Math/min (inc mid-index) (dec (alength data)))]\n\t\t\t\t(cond\n\t\t\t\t\t(in-range? to-find (aget data mid-index)) (aget data mid-index)\n\t\t\t\t\t(in-range? to-find (aget data lower-index)) (aget data lower-index)\n\t\t\t\t\t(in-range? to-find (aget data higher-index)) (aget data higher-index)))))))&quot; &quot;(defn find-data\n\t([data to-find]\n\t  (find-data data to-find 0 (dec (alength data))))\n\t([data to-find left right]\n\t\t(let [mid-index (quot (+ right left) 2)\n\t\t\t\t\tmid-value (aget data mid-index 0)\n\t\t\t\t\t_ (println \&quot;left\&quot; left \&quot; right\&quot; right \&quot; mid-index\&quot; mid-index \&quot; mid-value\&quot; mid-value)]\n\t\t\t(if (&gt; right left)\n\t\t\t\t(cond\n\t\t\t\t\t(in-range? to-find (aget data mid-index)) (aget data mid-index)\n\t\t\t\t\t(&gt; to-find mid-value) (recur data to-find (inc mid-index) right)\n\t\t\t\t\t(&lt; to-find mid-value)\t(recur data to-find left (dec mid-index)))))))&quot; &quot;(defn find-data\n\t([data to-find]\n\t  (find-data data to-find 0 (dec (alength data))))\n\t([data to-find left right]\n\t\t(let [mid-index (quot (+ right left) 2)\n\t\t\t\t\tmid-value (aget data mid-index 0)\n\t\t\t\t\t_ (println \&quot;left\&quot; left \&quot; right\&quot; right \&quot; mid-index\&quot; mid-index \&quot; mid-value\&quot; mid-value)]\n\t\t\t(if (&gt; right left)\n\t\t\t\t(cond\n\t\t\t\t\t(in-range? to-find (aget data mid-index)) (aget data mid-index)\n\t\t\t\t\t(&gt; to-find mid-value) (recur data to-find (inc mid-index) right)\n\t\t\t\t\t(&lt; to-find mid-value)\t(recur data to-find left (dec mid-index)))\n\t\t\t\t(let [lower-index (Math/max (dec mid-index) 0)\n\t\t\t\t\t\t\thigher-index (Math/min (inc mid-index) (dec (alength data)))]\n\t\t\t\t(cond\n\t\t\t\t\t(in-range? to-find (aget data lower-index)) (aget data lower-index)\n\t\t\t\t\t(in-range? to-find (aget data higher-index)) (aget data higher-index)))))))&quot; &quot;(defn find-data\n\t([data to-find]\n\t  (find-data data to-find 0 (dec (alength data))))\n\t([data to-find left right]\n\t\t(let [mid-index (quot (+ right left) 2)\n\t\t\t\t\tmid-value (aget data mid-index 0)\n\t\t\t\t\t_ (println \&quot;left\&quot; left \&quot; right\&quot; right \&quot; mid-index\&quot; mid-index \&quot; mid-value\&quot; mid-value)]\n\t\t\t(if (&gt;= right left)\n\t\t\t\t(cond\n\t\t\t\t\t(in-range? to-find (aget data mid-index)) (aget data mid-index)\n\t\t\t\t\t(&gt; to-find mid-value) (recur data to-find (inc mid-index) right)\n\t\t\t\t\t(&lt; to-find mid-value)\t(recur data to-find left (dec mid-index)))\n\t\t\t\t(let [lower-index (Math/max (dec mid-index) 0)\n\t\t\t\t\t\t\thigher-index (Math/min (inc mid-index) (dec (alength data)))]\n\t\t\t\t(cond\n\t\t\t\t\t(in-range? to-find (aget data lower-index)) (aget data lower-index)\n\t\t\t\t\t(in-range? to-find (aget data higher-index)) (aget data higher-index)))))))&quot; &quot;(pprint compacted-arr)&quot; &quot;(pprint (find-data compacted-arr 16777472))&quot; &quot;(pprint (find-data compacted-arr 16777471))&quot; &quot;(pprint (find-data compacted-arr 16771))&quot; &quot;(pprint (find-data compacted-arr 16781311))&quot; &quot;(defn find-data\n\t([data to-find]\n\t  (find-data data to-find 0 (dec (alength data))))\n\t([data to-find left right]\n\t\t(let [mid-idx (quot (+ right left) 2)\n\t\t\t\t\tmid-data (aget data mid-idx)\n\t\t\t\t\tmid-value (aget mid-data 0)]\n\t\t\t(if (&gt;= right left)\n\t\t\t\t(cond\n\t\t\t\t\t(in-range? to-find mid-data) mid-data\n\t\t\t\t\t(&gt; to-find mid-value) (recur data to-find (inc mid-idx) right)\n\t\t\t\t\t(&lt; to-find mid-value)\t(recur data to-find left (dec mid-idx)))\n\t\t\t\t(let [lo-idx (Math/max (dec mid-idx) 0)\n\t\t\t\t\t\t\thi-idx (Math/min (inc mid-idx) (dec (alength data)))]\n\t\t\t\t\t(cond\n\t\t\t\t\t\t(in-range? to-find (aget data lo-idx)) (aget data lo-idx)\n\t\t\t\t\t\t(in-range? to-find (aget data hi-idx)) (aget data hi-idx)))))))&quot; &quot;(pprint (find-data compacted-arr 16787200))&quot; &quot;(pprint (find-data compacted-arr 16787199))&quot; &quot;(map (partial find-data compacted) [16777215 16787200])&quot; &quot;(let [compacted (load-compacted-arr (str-&gt;rdr compacted-txt))]\n\t(some? (map (partial find-data compacted) [16777215 16787200])))&quot; &quot;(let [compacted (load-compacted-arr (str-&gt;rdr compacted-txt))]\n\t(apply some? (map (partial find-data compacted) [16777215 16787200])))&quot; &quot;(let [compacted (load-compacted-arr (str-&gt;rdr compacted-txt))]\n\t(map (partial find-data compacted) [16777215 16787200]))&quot; &quot;(let [compacted (load-compacted-arr (str-&gt;rdr compacted-txt))]\n\t(any (map (partial find-data compacted) [16777215 16787200])))&quot; &quot;(let [compacted (load-compacted-arr (str-&gt;rdr compacted-txt))]\n\t(map (partial find-data compacted) [16777215 16787200 16777216]))&quot; &quot;(let [compacted (load-compacted-arr (str-&gt;rdr compacted-txt))]\n\t(not-any? nil? (map (partial find-data compacted) [16777215 16787200 16777216])))&quot; &quot;(let [compacted (load-compacted-arr (str-&gt;rdr compacted-txt))]\n\t(not-any? nil? (map (partial find-data compacted) [16777215 16787200])))&quot; &quot;(let [compacted (load-compacted-arr (str-&gt;rdr compacted-txt))]\n\t(every? nil? (map (partial find-data compacted) [16777215 16787200])))&quot; &quot;(let [compacted (load-compacted-arr (str-&gt;rdr compacted-txt))]\n\t(every? nil? (map (partial find-data compacted) [16777215 16787200 16777216])))&quot; &quot;(defn octetIp-&gt;geo [data octetIp]\n\t(qf/find-data data octetIp))&quot; &quot;(pprint octetIp-&gt;geo \&quot;1.0.0.0\&quot;)&quot; &quot;(pprint octetIp-&gt;geo qf/compacted-arr  \&quot;1.0.0.0\&quot;)&quot; &quot;(defn octetIp-&gt;geo [data octetIp]\n\t(qf/find-data data (octetIp&gt;longIp octetIp)))&quot; &quot;(defn octetIp-&gt;geo [data octetIp]\n\t(-&gt;&gt; (octetIp-&gt;longIp octetIp)\n\t\t\t (partial qf/find-data data)\n\t\t\t (subvec 2)))&quot; &quot;(pprint (octetIp-&gt;geo qf/compacted-arr  \&quot;1.1.0.0\&quot;))&quot; &quot;(defn octetIp-&gt;geo [data octetIp]\n\t(-&gt;&gt; (octetIp-&gt;longIp octetIp)\n\t\t\t (partial qf/find-data data)\n\t\t\t vec\n\t\t\t (subvec 2)))&quot; &quot;(defn octetIp-&gt;geo [data octetIp]\n\t(-&gt;&gt; (octetIp-&gt;longIp octetIp)\n\t\t\t (qf/find-data data)\n\t\t\t vec\n\t\t\t (subvec 2)))&quot; &quot;(defn octetIp-&gt;geo [data octetIp]\n\t(-&gt;&gt; (octetIp-&gt;longIp octetIp)\n\t\t\t (qf/find-data data)))&quot; &quot;(defn octetIp-&gt;geo [data octetIp]\n\t(-&gt;&gt; (octetIp-&gt;longIp octetIp)\n\t\t\t (qf/find-data data)\n\t\t\t (partial subvec 2)))&quot; &quot;(defn octetIp-&gt;geo [data octetIp]\n\t(-&gt;&gt; (octetIp-&gt;longIp octetIp)))&quot; &quot;(defn octetIp-&gt;geo [data octetIp]\n\t(-&gt;&gt; (octetIp-&gt;longIp octetIp)\n\t\t\t (partial qf/find-data data)))&quot; &quot;(-&gt;&gt; (octetIp-&gt;longIp octetIp)\n\t\t (qf/find-data qf/compacted-arr))&quot; &quot;(-&gt;&gt; (octetIp-&gt;longIp \&quot;1.0.0.0\&quot;)\n\t\t (qf/find-data qf/compacted-arr))&quot; &quot;(defn octetIp-&gt;geo [data octetIp]\n\t(qf/find-data data (octetIp-&gt;longIp octetIp)))&quot; &quot;(-&gt;&gt; (octetIp-&gt;longIp \&quot;1.0.0.0\&quot;)\n\t\t (qf/find-data qf/compacted-arr)\n\t\t (subvec 2)\n\t\t pprint)&quot; &quot;(-&gt;&gt; (octetIp-&gt;longIp \&quot;1.0.0.0\&quot;)\n\t\t (qf/find-data qf/compacted-arr)\n\t\t #(subvec % 2)\n\t\t pprint)&quot; &quot;(-&gt;&gt; (octetIp-&gt;longIp \&quot;1.0.0.0\&quot;)\n\t\t (qf/find-data qf/compacted-arr)\n\t\t (#(subvec % 2))\n\t\t pprint)&quot; &quot;(-&gt;&gt; (octetIp-&gt;longIp \&quot;1.0.0.0\&quot;)\n\t\t (qf/find-data qf/compacted-arr)\n\t\t pprint)&quot; &quot;(-&gt;&gt; (octetIp-&gt;longIp \&quot;1.0.0.0\&quot;)\n\t\t (qf/find-data qf/compacted-arr)\n\t\t type\n\t\t pprint)&quot; &quot;(-&gt;&gt; (octetIp-&gt;longIp \&quot;1.0.0.0\&quot;)\n\t\t (qf/find-data qf/compacted-arr)\n\t\t type)&quot; &quot;(-&gt;&gt; (octetIp-&gt;longIp \&quot;1.0.0.0\&quot;)\n\t\t (qf/find-data qf/compacted-arr)\n\t\t (type))&quot; &quot;(-&gt;&gt; (octetIp-&gt;longIp \&quot;1.0.0.0\&quot;)\n\t\t (qf/find-data qf/compacted-arr)\n\t\t (vec)\n\t\t pprint)&quot; &quot;(-&gt;&gt; (octetIp-&gt;longIp \&quot;1.0.0.0\&quot;)\n\t\t (qf/find-data qf/compacted-arr)\n\t\t vec\n\t\t pprint)&quot; &quot;(-&gt;&gt; (octetIp-&gt;longIp \&quot;1.0.0.0\&quot;)\n\t\t (qf/find-data qf/compacted-arr)\n\t\t vec\n\t\t #(subvec % 2)\n\t\t pprint)&quot; &quot;(-&gt;&gt; (octetIp-&gt;longIp \&quot;1.0.0.0\&quot;)\n\t\t (qf/find-data qf/compacted-arr)\n\t\t vec\n\t\t (#(subvec % 2))\n\t\t pprint)&quot; &quot;(-&gt;&gt; (octetIp-&gt;longIp \&quot;1.0.0.0\&quot;)\n\t\t (qf/find-data qf/compacted-arr)\n\t\t vec\n\t\t (#(subvec % 2)))&quot; &quot;(defn octetIp-&gt;geo [data octetIp]\n\t(-&gt;&gt; (octetIp-&gt;longIp octetIp)\n\t\t\t (qf/find-data qf/compacted-arr)\n\t\t\t vec\n\t\t\t (#(subvec % 2))))&quot; &quot;(pprint (octetIp-&gt;geo qf/compacted-arr  \&quot;1.0.0.0\&quot;))&quot; &quot;(defn octetIp-&gt;geo [data octetIp]\n\t(-&gt;&gt; (octetIp-&gt;longIp octetIp)\n\t\t\t (qf/find-data data)\n\t\t\t vec\n\t\t\t (#(subvec % 2))))&quot; &quot;(use 'clojure.pprint)&quot; &quot;(-&gt;&gt; (octetIp-&gt;longIp \&quot;1.0.0.0\&quot;)&quot;], :remote []}}</component>
   <component name="RunManager" selected="Clojure REPL.REPL for ip-geolocation">
     <configuration default="false" name="core_test" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
       <module name="ip-geolocation" />
@@ -580,11 +641,18 @@
       <option name="project" value="LOCAL" />
       <updated>1482690830566</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="implementation of compactation and first find-data method">
+      <created>1482705585356</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1482705585356</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1436" height="877" extended-state="0" />
+    <frame x="2" y="23" width="1916" height="1057" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -594,14 +662,14 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="REPL" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49442896" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="REPL" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44832987" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2888889" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Leiningen" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19467641" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19415449" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32982457" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -645,7 +713,19 @@
         <state relative-caret-position="1020">
           <caret line="60" column="53" selection-start-line="60" selection-start-column="53" selection-end-line="60" selection-end-column="53" />
           <folding>
-            <marker date="1482705579000" expanded="true" signature="1598:1609" ph="(defn load-data-arr ...)" />
+            <marker date="1482853600000" expanded="true" signature="0:115" ph="(ns ip-geolocation.quova-file ...)" />
+            <marker date="1482853600000" expanded="true" signature="237:339" ph="(defn parse-value ...)" />
+            <marker date="1482853600000" expanded="true" signature="342:460" ph="(defn parse-line ...)" />
+            <marker date="1482853600000" expanded="true" signature="463:805" ph="(defn is-mergable? ...)" />
+            <marker date="1482853600000" expanded="true" signature="808:932" ph="(defn merge-parsed ...)" />
+            <marker date="1482853600000" expanded="true" signature="935:1411" ph="(defn compact ...)" />
+            <marker date="1482853600000" expanded="true" signature="1414:1522" ph="(defn compact-original-file ...)" />
+            <marker date="1482853600000" expanded="true" signature="1525:1536" ph="(defn load-data-arr ...)" />
+            <marker date="1482853600000" expanded="true" signature="1525:1682" ph="(defn load-compacted-arr ...)" />
+            <marker date="1482853600000" expanded="true" signature="1685:1766" ph="(def compacted-arr ...)" />
+            <marker date="1482853600000" expanded="true" signature="1769:1850" ph="(defn in-range? ...)" />
+            <marker date="1482853600000" expanded="true" signature="1853:2535" ph="(defn find-data ...)" />
+            <marker date="1482853600000" expanded="true" signature="2538:2658" ph="(defn octetIp-&gt;geo ...)" />
           </folding>
         </state>
       </provider>
@@ -655,7 +735,19 @@
         <state relative-caret-position="799">
           <caret line="47" column="34" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
           <folding>
-            <marker date="1482705579000" expanded="true" signature="1598:1609" ph="(defn load-data-arr ...)" />
+            <marker date="1482853600000" expanded="true" signature="0:115" ph="(ns ip-geolocation.quova-file ...)" />
+            <marker date="1482853600000" expanded="true" signature="237:339" ph="(defn parse-value ...)" />
+            <marker date="1482853600000" expanded="true" signature="342:460" ph="(defn parse-line ...)" />
+            <marker date="1482853600000" expanded="true" signature="463:805" ph="(defn is-mergable? ...)" />
+            <marker date="1482853600000" expanded="true" signature="808:932" ph="(defn merge-parsed ...)" />
+            <marker date="1482853600000" expanded="true" signature="935:1411" ph="(defn compact ...)" />
+            <marker date="1482853600000" expanded="true" signature="1414:1522" ph="(defn compact-original-file ...)" />
+            <marker date="1482853600000" expanded="true" signature="1525:1536" ph="(defn load-data-arr ...)" />
+            <marker date="1482853600000" expanded="true" signature="1525:1682" ph="(defn load-compacted-arr ...)" />
+            <marker date="1482853600000" expanded="true" signature="1685:1766" ph="(def compacted-arr ...)" />
+            <marker date="1482853600000" expanded="true" signature="1769:1850" ph="(defn in-range? ...)" />
+            <marker date="1482853600000" expanded="true" signature="1853:2535" ph="(defn find-data ...)" />
+            <marker date="1482853600000" expanded="true" signature="2538:2658" ph="(defn octetIp-&gt;geo ...)" />
           </folding>
         </state>
       </provider>
@@ -665,31 +757,43 @@
         <state relative-caret-position="289">
           <caret line="17" column="40" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
           <folding>
-            <marker date="1482705579000" expanded="true" signature="1598:1609" ph="(defn load-data-arr ...)" />
+            <marker date="1482853600000" expanded="true" signature="0:115" ph="(ns ip-geolocation.quova-file ...)" />
+            <marker date="1482853600000" expanded="true" signature="237:339" ph="(defn parse-value ...)" />
+            <marker date="1482853600000" expanded="true" signature="342:460" ph="(defn parse-line ...)" />
+            <marker date="1482853600000" expanded="true" signature="463:805" ph="(defn is-mergable? ...)" />
+            <marker date="1482853600000" expanded="true" signature="808:932" ph="(defn merge-parsed ...)" />
+            <marker date="1482853600000" expanded="true" signature="935:1411" ph="(defn compact ...)" />
+            <marker date="1482853600000" expanded="true" signature="1414:1522" ph="(defn compact-original-file ...)" />
+            <marker date="1482853600000" expanded="true" signature="1525:1536" ph="(defn load-data-arr ...)" />
+            <marker date="1482853600000" expanded="true" signature="1525:1682" ph="(defn load-compacted-arr ...)" />
+            <marker date="1482853600000" expanded="true" signature="1685:1766" ph="(def compacted-arr ...)" />
+            <marker date="1482853600000" expanded="true" signature="1769:1850" ph="(defn in-range? ...)" />
+            <marker date="1482853600000" expanded="true" signature="1853:2535" ph="(defn find-data ...)" />
+            <marker date="1482853600000" expanded="true" signature="2538:2658" ph="(defn octetIp-&gt;geo ...)" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ip_geolocation/quova_ip_format.clj">
+    <entry file="file://$PROJECT_DIR$/src/ip_geolocation/quova_format.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="77" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
-            <marker date="1482004362000" expanded="true" signature="0:72" ph="(ns ip-geolocation.quova-ip-format ...)" />
-            <marker date="1482004362000" expanded="true" signature="119:341" ph="(defn octetIp-&gt;longIp ...)" />
-            <marker date="1482004362000" expanded="true" signature="344:526" ph="(defn longIp-&gt;octetIp ...)" />
+            <marker date="1482852633000" expanded="true" signature="0:69" ph="(ns ip-geolocation.quova-format ...)" />
+            <marker date="1482852633000" expanded="true" signature="116:338" ph="(defn octetIp-&gt;longIp ...)" />
+            <marker date="1482852633000" expanded="true" signature="341:523" ph="(defn longIp-&gt;octetIp ...)" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ip_geolocation/quova_ip_format.clj">
+    <entry file="file://$PROJECT_DIR$/src/ip_geolocation/quova_format.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
           <caret line="8" column="96" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
-            <marker date="1482004362000" expanded="true" signature="0:72" ph="(ns ip-geolocation.quova-ip-format ...)" />
-            <marker date="1482004362000" expanded="true" signature="119:341" ph="(defn octetIp-&gt;longIp ...)" />
-            <marker date="1482004362000" expanded="true" signature="344:526" ph="(defn longIp-&gt;octetIp ...)" />
+            <marker date="1482852633000" expanded="true" signature="0:69" ph="(ns ip-geolocation.quova-format ...)" />
+            <marker date="1482852633000" expanded="true" signature="116:338" ph="(defn octetIp-&gt;longIp ...)" />
+            <marker date="1482852633000" expanded="true" signature="341:523" ph="(defn longIp-&gt;octetIp ...)" />
           </folding>
         </state>
       </provider>
@@ -697,13 +801,6 @@
     <entry file="file://$PROJECT_DIR$/test/ip_geolocation/core_test.clj" />
     <entry file="file://$PROJECT_DIR$/test/ip_geolocation/core_test.clj" />
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.lein-failures">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1729,35 +1826,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ip_geolocation/quova_ip_format.clj">
+    <entry file="file://$PROJECT_DIR$/src/ip_geolocation/quova_format.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-          <folding>
-            <marker date="1482004362000" expanded="true" signature="0:72" ph="(ns ip-geolocation.quova-ip-format ...)" />
-            <marker date="1482004362000" expanded="true" signature="119:341" ph="(defn octetIp-&gt;longIp ...)" />
-            <marker date="1482004362000" expanded="true" signature="344:526" ph="(defn longIp-&gt;octetIp ...)" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/ip_geolocation/quova_ip_format_test.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="38" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-          <folding>
-            <marker date="1482057385000" expanded="true" signature="0:85" ph="(ns ip-geolocation.quova-ip-format-test ...)" />
-            <marker date="1482057385000" expanded="true" signature="0:143" ph="(ns ip-geolocation.quova-ip-format-test ...)" />
-            <marker date="1482057385000" expanded="true" signature="146:363" ph="(deftest octetIp-&gt;longIp-test ...)" />
-            <marker date="1482057385000" expanded="true" signature="366:545" ph="(deftest longIp-&gt;octetIp-test ...)" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/clojure/clojure/1.7.0/clojure-1.7.0.jar!/clojure/core.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="3757" column="6" selection-start-line="3757" selection-start-column="6" selection-end-line="3757" selection-end-column="6" />
+        <state relative-caret-position="340">
+          <caret line="3665" column="6" selection-start-line="3665" selection-start-column="6" selection-end-line="3665" selection-end-column="6" />
           <folding>
             <marker date="1444474339000" expanded="true" signature="464:549" ph="(ns clojure.core ...)" />
             <marker date="1444474339000" expanded="true" signature="589:735" ph="(def list ...)" />
@@ -2384,33 +2464,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/ip_geolocation/quova_file_test.clj">
+    <entry file="file://$PROJECT_DIR$/src/ip_geolocation/quova_file.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1445">
-          <caret line="85" column="48" selection-start-line="85" selection-start-column="24" selection-end-line="85" selection-end-column="24" />
+        <state relative-caret-position="104">
+          <caret line="44" column="19" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
           <folding>
-            <marker date="1482705393000" expanded="true" signature="0:170" ph="(ns ip-geolocation.quova-file-test ...)" />
-            <marker date="1482705393000" expanded="true" signature="294:1914" ph="(def quova-data-snippet ...)" />
-            <marker date="1482705393000" expanded="true" signature="1916:1993" ph="(def quova-data-snippet-str ...)" />
-            <marker date="1482705393000" expanded="true" signature="1996:2193" ph="(def quova-fraction-line ...)" />
-            <marker date="1482705393000" expanded="true" signature="2196:2446" ph="(deftest parse-line-test ...)" />
-            <marker date="1482705393000" expanded="true" signature="2449:2551" ph="(deftest parse-fraction-line-test ...)" />
-            <marker date="1482705393000" expanded="true" signature="2554:2786" ph="(deftest is-mergable?-test ...)" />
-            <marker date="1482705393000" expanded="true" signature="2789:2857" ph="(defn str-&gt;rdr ...)" />
-            <marker date="1482705393000" expanded="true" signature="2859:2995" ph="(def compacted-txt ...)" />
-            <marker date="1482705393000" expanded="true" signature="2998:3314" ph="(deftest compact-test ...)" />
-            <marker date="1482705393000" expanded="true" signature="3317:3594" ph="(deftest load-compacted-arr-test ...)" />
-            <marker date="1482705393000" expanded="true" signature="3597:4040" ph="(deftest find-data-test ...)" />
+            <marker date="1482853600000" expanded="true" signature="0:115" ph="(ns ip-geolocation.quova-file ...)" />
+            <marker date="1482853600000" expanded="true" signature="237:339" ph="(defn parse-value ...)" />
+            <marker date="1482853600000" expanded="true" signature="342:460" ph="(defn parse-line ...)" />
+            <marker date="1482853600000" expanded="true" signature="463:805" ph="(defn is-mergable? ...)" />
+            <marker date="1482853600000" expanded="true" signature="808:932" ph="(defn merge-parsed ...)" />
+            <marker date="1482853600000" expanded="true" signature="935:1411" ph="(defn compact ...)" />
+            <marker date="1482853600000" expanded="true" signature="1414:1522" ph="(defn compact-original-file ...)" />
+            <marker date="1482853600000" expanded="true" signature="1525:1536" ph="(defn load-data-arr ...)" />
+            <marker date="1482853600000" expanded="true" signature="1525:1682" ph="(defn load-compacted-arr ...)" />
+            <marker date="1482853600000" expanded="true" signature="1685:1766" ph="(def compacted-arr ...)" />
+            <marker date="1482853600000" expanded="true" signature="1769:1850" ph="(defn in-range? ...)" />
+            <marker date="1482853600000" expanded="true" signature="1853:2535" ph="(defn find-data ...)" />
+            <marker date="1482853600000" expanded="true" signature="2538:2658" ph="(defn octetIp-&gt;geo ...)" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ip_geolocation/quova_file.clj">
+    <entry file="file://$PROJECT_DIR$/src/ip_geolocation/quova_format.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="583">
-          <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+        <state relative-caret-position="306">
+          <caret line="18" column="66" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
           <folding>
-            <marker date="1482705579000" expanded="true" signature="1598:1609" ph="(defn load-data-arr ...)" />
+            <marker date="1482852633000" expanded="true" signature="0:69" ph="(ns ip-geolocation.quova-format ...)" />
+            <marker date="1482852633000" expanded="true" signature="116:338" ph="(defn octetIp-&gt;longIp ...)" />
+            <marker date="1482852633000" expanded="true" signature="341:523" ph="(defn longIp-&gt;octetIp ...)" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/ip_geolocation/quova_file_test.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="74" column="31" selection-start-line="74" selection-start-column="31" selection-end-line="74" selection-end-column="31" />
+          <folding>
+            <marker date="1482855082000" expanded="true" signature="0:170" ph="(ns ip-geolocation.quova-file-test ...)" />
+            <marker date="1482855082000" expanded="true" signature="294:1914" ph="(def quova-data-snippet ...)" />
+            <marker date="1482855082000" expanded="true" signature="1916:1993" ph="(def quova-data-snippet-str ...)" />
+            <marker date="1482855082000" expanded="true" signature="1996:2193" ph="(def quova-fraction-line ...)" />
+            <marker date="1482855082000" expanded="true" signature="2196:2446" ph="(deftest parse-line-test ...)" />
+            <marker date="1482855082000" expanded="true" signature="2449:2551" ph="(deftest parse-fraction-line-test ...)" />
+            <marker date="1482855082000" expanded="true" signature="2554:2786" ph="(deftest is-mergable?-test ...)" />
+            <marker date="1482855082000" expanded="true" signature="2789:2857" ph="(defn str-&gt;rdr ...)" />
+            <marker date="1482855082000" expanded="true" signature="2860:2996" ph="(def compacted-txt ...)" />
+            <marker date="1482855082000" expanded="true" signature="2999:3315" ph="(deftest compact-test ...)" />
+            <marker date="1482855082000" expanded="true" signature="3318:3595" ph="(deftest load-compacted-arr-test ...)" />
+            <marker date="1482855082000" expanded="true" signature="3598:4005" ph="(deftest find-data-test ...)" />
+            <marker date="1482855082000" expanded="true" signature="4008:4285" ph="(deftest octetIp-&gt;geo-test ...)" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.lein-failures">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/ip_geolocation/quova_format_test.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="46" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <marker date="1482852897000" expanded="true" signature="0:82" ph="(ns ip-geolocation.quova-ip-format-test ...)" />
           </folding>
         </state>
       </provider>

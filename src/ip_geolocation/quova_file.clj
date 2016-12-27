@@ -1,8 +1,6 @@
 (ns ip-geolocation.quova-file
-	(:require [clojure.string :as str])
-	(:require [clojure-csv.core :as csv]
-						[clojure.java.io :as io]
-						[ip-geolocation.quova-ip-format :refer :all]))
+	(:require [clojure.java.io :as io]
+						[ip-geolocation.quova-format :refer :all]))
 
 
 (def QUOVA_FILE_NAME "../EDITION_Gold_2016-12-08_v815.dat")
@@ -85,3 +83,13 @@
 					(cond
 						(in-range? to-find (aget data lo-idx)) (aget data lo-idx)
 						(in-range? to-find (aget data hi-idx)) (aget data hi-idx)))))))
+
+
+(defn octetIp->geo [data octetIp]
+	(some->> (octetIp->longIp octetIp)
+			 (find-data data)
+			 vec
+			 (#(subvec % 2))))
+
+
+;(pprint (octetIp->geo qf/compacted-arr  "1.0.0.0"))

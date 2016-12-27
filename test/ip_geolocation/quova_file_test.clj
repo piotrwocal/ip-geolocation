@@ -51,6 +51,7 @@
 (defn str->rdr [txt]
 	(io/reader (io/input-stream (.getBytes txt))))
 
+
 (def compacted-txt
 	(let [rdr (str->rdr quova-data-snippet-str)
 				wrt (java.io.StringWriter.)]
@@ -89,10 +90,16 @@
 			16777480	16777472
 			16785408	16785408
 			16787199	16785408)
-		(is (nil? (find-data compacted 16777215)))
-		(is (nil? (find-data compacted 16787200)))
-		(is (nil? (find-data compacted 16781312)))))
+		(is (every? nil? (map (partial find-data compacted)
+													[16777215 16787200 16781312])))))
 
 
-
+(deftest octetIp->geo-test
+	(let [compacted (load-compacted-arr (str->rdr compacted-txt))]
+		(are [octetIp geo] (= geo (octetIp->geo compacted octetIp))
+			 "1.0.0.0" [-27 153]
+       "1.0.14.1" [23 113]
+			 "1.0.16.88" [35 139]
+			 "1.0.39.0"  nil
+			 "1.0.38.255" [23 113])))
 
