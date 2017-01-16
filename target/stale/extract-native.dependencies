@@ -1,1 +1,1 @@
-([:dependencies ([org.clojure/clojure "1.7.0"] [clojure-csv/clojure-csv "2.0.1"] [org.clojure/tools.nrepl "0.2.6" :exclusions ([org.clojure/clojure]) :scope "test"] [clojure-complete/clojure-complete "0.2.3" :exclusions ([org.clojure/clojure]) :scope "test"] [midje/midje "1.7.0" :scope "test"])])
+([:dependencies ([javax.servlet/javax.servlet-api "3.1.0"] [ring/ring-servlet "1.5.0"] [org.clojure/clojure "1.7.0"] [lein-ring/lein-ring "0.10.0"] [ring/ring-core "1.5.0"] [ring/ring-jetty-adapter "1.5.0"])])
